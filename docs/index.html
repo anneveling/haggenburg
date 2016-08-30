@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="css/styles.css">
 <style>
 .ani {
-  fill-opacity: 0.3;
+  fill-opacity: 0;
   stroke: #fff;
   stroke-width: 2.5;
         stroke-dasharray: 500;
@@ -25,10 +25,6 @@
         -webkit-animation: draw 8s linear forwards;
         -moz-animation: draw 8s linear forwards;
         -o-animation: draw 8s linear forwards;
-        font-weight: bold;
-        font-family: Amatic SC;
-        -inkscape-font-specification: Amatic SC Bold"
-        }
         @keyframes draw {
         to {
             stroke-dashoffset: 0;
@@ -50,6 +46,18 @@
             stroke-dashoffset: 0;
             }
         }
+}
+
+.logo path {
+  transition: fill 0.5s;
+  fill: transparent;
+  fill-opacity: 0;
+}
+.logo.active path {
+  fill: black;
+  fill-opacity: 0.4;
+}
+
 
 </style>
 
@@ -511,10 +519,9 @@
     <div id="map" class="map">
     <div class="location-box-container">
         <div class="location-box pad-20">
-          <h2 class="fs-6 strong">Sydney Exhibition Centre</h2>
+          <h2 class="fs-6 strong">Vondelkerk</h2>
           <address class="location">
-            Glebe Island - 41 James Craig Road <br>
-            Rozelle NSW 2039
+            Vondelstraat 120, Amsterdam
           </address>
           <span class="block text-right">
             <a class="icon icon-right arrow-right uppercase" href="#">Get directions</a>
