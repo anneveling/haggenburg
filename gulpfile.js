@@ -34,7 +34,6 @@ gulp.task('sass', function () {
     .pipe(browserSync.reload({
       stream: true
     }))
-    .pipe(notify("SCSS Compiled Successfully :)"));
 });
 
 // Task to Minify JS
