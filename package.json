@@ -6,8 +6,9 @@
   "scripts": {
     "start": "gulp",
     "build": "gulp build",
+    "setup-git": "git config --global user.email 'anne@beyondtrees.com'; git config --global user.name 'Anne Circle'",
     "deploy": "git add docs; git commit -m 'new deploy'; git push origin master",
-    "test": "npm run build; npm run deploy"
+    "test": "npm run build; npm run setup-git; npm run deploy"
   },
   "repository": {
     "type": "git",
