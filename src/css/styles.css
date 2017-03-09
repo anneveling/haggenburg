@@ -1520,9 +1520,9 @@ a {
     background-color: #3f464c; }
 
 .button-primary {
-  background-color: #731012; }
+  background-color: #f8504d; }
   .button-primary:hover, .button-primary:active {
-    background-color: #731012; }
+    background-color: #f53a37; }
 
 .button-register {
   height: 36px;
